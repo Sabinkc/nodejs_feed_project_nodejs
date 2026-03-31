@@ -1,0 +1,86 @@
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+html, body, #root{
+  height: 100%;
+  width: 100%;
+}
+
+/* index.css */
+
+/* 1. Basic Reset & Centering */
+.create-post-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f4f7f6;
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+/* 2. The Form Container */
+form {
+  background: #ffffff;
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+/* 3. Typography */
+h1 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.8rem;
+  color: #333;
+  text-align: center;
+}
+
+/* 4. Inputs (Text and File) */
+input[type='text'],
+input[type='file'] {
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.2s;
+}
+
+input[type='text']:focus {
+  outline: none;
+  border-color: #646cff; /* Vite's signature purple-blue */
+}
+
+/* Style for the file input specifically */
+input[type='file'] {
+  font-size: 0.9rem;
+  background: #fafafa;
+  cursor: pointer;
+}
+
+/* 5. The Submit Button */
+button[type='submit'] {
+  background-color: #646cff;
+  color: white;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+button[type='submit']:hover {
+  background-color: #535bf2;
+}
+
+button[type='submit']:active {
+  transform: scale(0.98);
+}
